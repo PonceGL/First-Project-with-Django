@@ -1,0 +1,22 @@
+Crear entorno virtual
+python3 -m venv venv
+Activación del ambiente virtual:
+Windows:
+.\venv\Scripts\activate
+Unix o MacOS:
+source venv/bin/activate
+
+
+pip install django
+
+django-admin startproject cursodjango
+
+django-admin help --commands
+
+cd cursodjango
+
+python3 manage.py runserver
+
+python3 manage.py startapp polls
+
+python3 manage.py migrate

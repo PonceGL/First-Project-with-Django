@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Polls | Django</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}" />
   </head>
   <body>
     <h1>Polls</h1>
     <section>
       {% if latest_question_list %}
-      <ul>
+      <ol>
         {% for question in latest_question_list %}
         <li>
           <a href="{% url 'polls:detail' question.id %}"
@@ -18,7 +20,7 @@
           >
         </li>
         {% endfor %}
-      </ul>
+      </ol>
       {% else %}
       <p>No polls are available.</p>
       {% endif %}

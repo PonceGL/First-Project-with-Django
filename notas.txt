@@ -17,11 +17,12 @@ cd cursodjango
 
 python3 manage.py runserver
 
-python3 manage.py startapp tasks
+python3 manage.py startapp public
+python3 manage.py startapp polls
 python3 manage.py startapp auth
 
-python3 manage.py makemigrations tasks
+python3 manage.py makemigrations polls
 
 python3 manage.py migrate
 
-python manage.py shell
+python3 manage.py shell

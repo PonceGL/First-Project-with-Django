@@ -1,0 +1,22 @@
+<header>
+  <h1>Django</h1>
+  <nav>
+    <ul>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/polls/">Polls</a>
+      </li>
+      {% if user.is_authenticated %}
+      <li>
+        <a href="/logout/">Logout</a>
+      </li>
+      {% else %}
+      <li>
+        <a href="/login/">Login</a>
+      </li>
+      {% endif %}
+    </ul>
+  </nav>
+</header>

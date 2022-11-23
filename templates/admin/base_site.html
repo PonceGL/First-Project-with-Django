@@ -1,5 +1,20 @@
+{% comment %} https://github.com/django/django/blob/main/django/contrib/admin/templates/admin/base.html {% endcomment %}
+
+{% extends 'admin/base.html' %}
+
+{% block title %} PonceGL  
+{% comment %} {{site_title|default:_('PonceGL Django')}}  {% endcomment %}
+{% endblock %} 
+
+{% block extrastyle %}
+{% load static %} 
+  <link rel="stylesheet" type="text/css" href="{% static 'css/admin/admin.css' %}">
+{% endblock %} 
+
 {% block branding %}
 <h1 id="site-name">
-  <a href="{% url 'admin:index' %}">Polls Administration</a>
+  <a href="{% url 'admin:index' %}">PonceGL Django</a> | {{LANGUAGE_CODE}}
 </h1>
 {% endblock %}
+
+{% block nav-global %}{% endblock %}

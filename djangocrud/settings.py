@@ -44,6 +44,7 @@ THIRD_APPS = ()
 LOCAL_APPS = (
     'public.apps.PublicConfig',
     'polls.apps.PollsConfig',
+    'tasks.apps.TasksConfig',
 )
 
 # INSTALLED_APPS = [

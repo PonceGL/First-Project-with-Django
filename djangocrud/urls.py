@@ -24,5 +24,6 @@ urlpatterns = [
     # path('auth/', include('auth.urls')),
     path('', include('public.urls')),
     path('polls/', include('polls.urls')),
+    path('tasks/', include('tasks.urls')),
     path('admin/', admin.site.urls),
 ]
